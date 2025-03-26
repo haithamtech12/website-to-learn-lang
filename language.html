@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تعليم اللغات</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* أنماط إضافية للصفحة الذكية */
+        #smart-platform {
+            color: white;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            text-align: center;
+            display: none; /* إخفاء القسم افتراضيًا */
+        }
+        #smart-platform h1 {
+            font-size: 3.75rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        #smart-platform p {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 2;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        #smart-platform .ai-tools {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        #smart-platform .ai-tool-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            width: 100%;
+            max-width: 30rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        #smart-platform .ai-tool-card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3);
+        }
+        #smart-platform .ai-tool-card h3 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: #ffdb58;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        #smart-platform .ai-tool-card p {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+        #smart-platform .ai-tool-card a {
+            background-color: #ff6b81;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+        }
+        #smart-platform .ai-tool-card a:hover {
+            background-color: #ff4757;
+            transform: translateY(-0.25rem);
+            box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 flex flex-col min-h-screen">
+    <header class="bg-gradient-to-br from-purple-500 to-pink-500 text-white py-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-semibold">منصة تعليم اللغات</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#features" class="hover:text-yellow-200 transition duration-300">الميزات</a></li>
+                    <li><a href="#courses" class="hover:text-yellow-200 transition duration-300">الدورات</a></li>
+                    <li><a href="#testimonials" class="hover:text-yellow-200 transition duration-300">الشهادات</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-200 transition duration-300">اتصل بنا</a></li>
+                    <li><a href="#pricing" class="hover:text-yellow-200 transition duration-300">الأسعار</a></li>
+                </ul>
+            </nav>
+            <a href="#smart-platform" class="bg-yellow-500 hover:bg-yellow-600 text-gray-800 font-semibold py-2.5 px-5 rounded-full transition duration-300">ابدأ الآن</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 flex-grow flex flex-col items-center justify-center">
+        <div class="text-center space-y-6 max-w-3xl">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800">طور مهاراتك اللغوية مع منصتنا الذكية</h1>
+            <p class="text-gray-600 text-lg sm:text-xl">
+                منصة تعليمية مبتكرة تستخدم الذكاء الاصطناعي لتوفير تجربة تعليمية مخصصة وفعالة للغتين الإنجليزية والعربية.
+            </p>
+            <a href="#smart-platform" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 text-lg">ابدأ رحلتك التعليمية الآن</a>
+        </div>
+    </main>
+
+    <section id="features" class="bg-white py-12 rounded-t-lg shadow-md">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">ميزات منصتنا</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-indigo-50 rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">تجربة مخصصة</h3>
+                    <p class="text-gray-600">
+                        نستخدم الذكاء الاصطناعي لتكييف الدروس والتمارين لتناسب مستوى تقدمك وأسلوب تعلمك.
+                    </p>
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="Personalized Experience" class="mt-4 rounded-md">
+                </div>
+                <div class="bg-indigo-50 rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">محتوى تفاعلي</h3>
+                    <p class="text-gray-600">
+                        دروس تفاعلية، وتمارين ممتعة، وأنشطة تحفزك على المشاركة الفعالة في عملية التعلم.
+                    </p>
+                     <img src="https://placehold.co/400x300/EEE/31343C" alt="Interactive Content" class="mt-4 rounded-md">
+                </div>
+                <div class="bg-indigo-50 rounded-lg shadow-sm p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">دعم متعدد اللغات</h3>
+                    <p class="text-gray-600">
+                        تعلم اللغتين الإنجليزية والعربية بطلاقة من خلال منصة واحدة تدعم لغتك الأم.
+                    </p>
+                    <img src="https://placehold.co/400x300/EEE/31343C" alt="Multilingual Support" class="mt-4 rounded-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="bg-gradient-to-br from-indigo-100 to-blue-100 py-12 rounded-t-lg shadow-md">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">الدورات المتاحة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4">الإنجليزية للمبتدئين</h3>
+                    <p class="text-gray-600">
+                        ابدأ رحلتك في تعلم اللغة الإنجليزية مع هذه الدورة التمهيدية التي تغطي الأساسيات.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>الحروف والأرقام</li>
+                        <li>المفردات الأساسية</li>
+                        <li>القواعد البسيطة</li>
+                    </ul>
+                    <button class="mt-6 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2.5 px-5 rounded-full transition duration-300">اشترك الآن</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4">العربية الفصحى</h3>
+                    <p class="text-gray-600">
+                        تعلم قواعد اللغة العربية الفصحى وأساسيات النحو والصرف في هذه الدورة الشاملة.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>القواعد النحوية</li>
+                        <li>الصرف والإعراب</li>
+                         <li>الكتابة الصحيحة</li>
+                    </ul>
+                    <button class="mt-6 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2.5 px-5 rounded-full transition duration-300">اشترك الآن</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4">الإنجليزية للأعمال</h3>
+                    <p class="text-gray-600">
+                       طور مهاراتك في اللغة الإنجليزية للأعمال وتعلم كيفية التواصل بفعالية في بيئة العمل.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>المصطلحات التجارية</li>
+                        <li>كتابة الرسائل</li>
+                        <li>مهارات العرض</li>
+                    </ul>
+                    <button class="mt-6 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2.5 px-5 rounded-full transition duration-300">اشترك الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="bg-white py-12 rounded-t-lg shadow-md">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">ماذا قالوا عنا</h2>
+            <div id="testimonial-carousel" class="relative overflow-hidden">
+                <div class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-50 text-gray-700 p-2 rounded-full cursor-pointer hover:bg-opacity-75 transition duration-300" onclick="changeTestimonial(-1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </div>
+                <div class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-50 text-gray-700 p-2 rounded-full cursor-pointer hover:bg-opacity-75 transition duration-300" onclick="changeTestimonial(1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+                <div class="transition-transform duration-500 ease-in-out">
+                    <div class="testimonial-slide flex flex-col items-center justify-center text-center px-6 py-8 rounded-lg bg-indigo-50">
+                        <img src="https://placehold.co/100x100/EEE/31343C" alt="User Avatar 1" class="rounded-full mb-4">
+                        <p class="text-gray-700 text-lg italic">
+                            "لقد ساعدتني هذه المنصة على تحسين لغتي الإنجليزية بشكل ملحوظ. الدروس ممتعة والتطبيق سهل الاستخدام."
+                        </p>
+                        <p class="font-semibold text-gray-800 mt-2">أحمد</p>
+                    </div>
+                    <div class="testimonial-slide flex flex-col items-center justify-center text-center px-6 py-8 rounded-lg bg-indigo-50 hidden">
+                        <img src="https://placehold.co/100x100/EEE/31343C" alt="User Avatar 2" class="rounded-full mb-4">
+                        <p class="text-gray-700 text-lg italic">
+                            "المنصة رائعة لتعلم اللغة العربية. الشروحات واضحة والتمارين مفيدة جداً."
+                        </p>
+                        <p class="font-semibold text-gray-800 mt-2">فاطمة</p>
+                    </div>
+                    <div class="testimonial-slide flex flex-col items-center justify-center text-center px-6 py-8 rounded-lg bg-indigo-50 hidden">
+                        <img src="https://placehold.co/100x100/EEE/31343C" alt="User Avatar 3" class="rounded-full mb-4">
+                        <p class="text-gray-700 text-lg italic">
+                            "أفضل منصة لتعلم الإنجليزية للأعمال. لقد ساعدتني في الحصول على وظيفة أفضل."
+                        </p>
+                        <p class="font-semibold text-gray-800 mt-2">يوسف</p>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="testimonial-dot bg-gray-300 rounded-full h-3 w-3 focus:outline-none" onclick="changeTestimonial(0)"></button>
+                    <button class="testimonial-dot bg-gray-300 rounded-full h-3 w-3 focus:outline-none" onclick="changeTestimonial(1)"></button>
+                    <button class="testimonial-dot bg-gray-300 rounded-full h-3 w-3 focus:outline-none" onclick="changeTestimonial(2)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gradient-to-br from-blue-100 to-purple-100 py-12 rounded-t-lg shadow-md">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">اتصل بنا</h2>
+            <div class="bg-white rounded-lg shadow-md p-8 max-w-md mx-auto">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">الاسم:</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="أدخل اسمك">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">البريد الإلكتروني:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">الرسالة:</label>
+                        <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-y" placeholder="أدخل رسالتك"></textarea>
+                    </div>
+                    <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300 w-full">أرسل رسالتك</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing" class="bg-white py-12 rounded-t-lg shadow-md">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">الأسعار</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-indigo-50 rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4 text-center">الخطة الأساسية</h3>
+                    <p class="text-gray-600 text-center text-2xl font-bold mb-4">10$ / شهر</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>الوصول إلى جميع الدروس</li>
+                        <li>تمارين تفاعلية</li>
+                        <li>دعم محدود</li>
+                    </ul>
+                    <button class="mt-6 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2.5 px-5 rounded-full transition duration-300 w-full">اشترك الآن</button>
+                </div>
+                <div class="bg-indigo-50 rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4 text-center">الخطة المميزة</h3>
+                    <p class="text-gray-600 text-center text-2xl font-bold mb-4">25$ / شهر</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                        <li>الوصول إلى جميع الدروس</li>
+                        <li>تمارين تفاعلية</li>
+                        <li>دعم كامل</li>
+                        <li>تقييمات مخصصة</li>
+                    </ul>
+                    <button class="mt-6 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2.5 px-5 rounded-full transition duration-300 w-full">اشترك الآن</button>
+                </div>
+                <div class="bg-indigo-50 rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4 text-center">خطة احترافية</h3>
+                    <p class="text-gray-600 text-center text-2xl font-bold mb-4">50$ / شهر</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-600">
+                         <li>الوصول إلى جميع الدروس</li>
+                        <li>تمارين تفاعلية</li>
+                        <li>دعم كامل</li>
+                        <li>تقييمات مخصصة</li>
+                        <li>حصص مباشرة</li>
+                    </ul>
+                    <button class="mt-6 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2.5 px-5 rounded-full transition duration-300 w-full">اشترك الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4 rounded-t-lg shadow-md">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 منصة تعليم اللغات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <section id="smart-platform" class="flex flex-col items-center justify-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold">منصة تعليمية ذكية</h1>
+        <p class="text-lg sm:text-xl">
+            استمتع بتجربة تعليمية فريدة ومخصصة باستخدام أدوات الذكاء الاصطناعي المتطورة.
+        </p>
+        <div class="ai-tools">
+            <div class="ai-tool-card">
+                <h3>مولد الفيديو بالذكاء الاصطناعي</h3>
+                <p>
+                    أنشئ مقاطع فيديو تعليمية جذابة بسهولة باستخدام تقنية تحويل النص إلى فيديو.
+                </p>
+                <div id="video-placeholder" class="mt-4">
+                    [سيتم عرض الفيديو هنا]
+                </div>
+                <button id="generate-video" class="mt-4 bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2.5 px-5 rounded-full transition duration-300">إنشاء فيديو</button>
+            </div>
+            <div class="ai-tool-card">
+                <h3>مولد النصوص بالذكاء الاصطناعي</h3>
+                <p>
+                    قم بإنشاء نصوص تعليمية عالية الجودة بسرعة وكفاءة باستخدام تقنية GPT-3.
+                </p>
+                <div id="text-placeholder" class="mt-4 p-4 bg-gray-800 rounded-md text-white">
+                    [سيتم عرض النص هنا]
+                </div>
+                <button id="generate-text" class="mt-4 bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2.5 px-5 rounded-full transition duration-300">إنشاء نص</button>
+            </div>
+        </d
